@@ -23,7 +23,7 @@ You are sitting on the beach.
 It is {advance_time()} 
 
 + [stroll down the beach] -> beach2
-* { Seashells == 24 } [go back home] -> home
+* { Seashells == 24 } [Go back home] -> home
 -> DONE
 
 == beach2 ==
@@ -31,8 +31,8 @@ This is further down the beach.
 
 It is {advance_time()} 
 * { time  == 1} [Pick up some seashells] -> shells
-+ [stroll] -> seashore
-+ [head to the ocean] -> ocean
++ [Stroll] -> seashore
++ [Head to the ocean] -> ocean
 -> DONE
 
 == shells ==
@@ -45,10 +45,10 @@ This is the breakline between the beach and ocean.
 
 It is {advance_time()} 
 
-{time == 0: the morning waves must of brought new  seashells}
-* { time == 0} [pick up some seashells] -> more_shells
+{time == 0: the morning waves must of brought new seashells}
+* { time == 0} [Pick up some seashells] -> more_shells
 + [head back] -> beach2
-* { time == 2 } [see the stars] -> stars
+* { time == 2 } [See the stars] -> stars
 -> DONE
 
 == more_shells==
@@ -57,7 +57,7 @@ You pick up the newly discovered seashells
 -> ocean
 
 == stars ==
-the stars shine brightly in the skys
+The stars shine brightly in the skys
 -> ocean
 
 == home ==
